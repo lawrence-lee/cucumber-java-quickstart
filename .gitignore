@@ -1,2 +1,7 @@
+.project
+.settings/
+.classpath
 build/
 .gradle/
+/bin/
+src/test/resources
