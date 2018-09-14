@@ -14,9 +14,6 @@
 
 package cucumber.boilerplate.steps;
 
-import com.liferay.portal.kernel.util.CharPool;
-import com.liferay.portal.kernel.util.StringBundler;
-import com.liferay.portal.kernel.util.StringUtil;
 import cucumber.api.java.en.When;
 import cucumber.boilerplate.steps.pages.BasePage;
 

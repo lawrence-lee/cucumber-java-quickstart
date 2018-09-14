@@ -14,7 +14,6 @@
 
 package cucumber.boilerplate.steps;
 
-import com.liferay.portal.kernel.util.StringBundler;
 import cucumber.api.java.en.When;
 import cucumber.boilerplate.steps.pages.BasePage;
 import org.openqa.selenium.WebElement;
@@ -47,15 +46,10 @@ public class ClickSteps extends BasePage {
 			return;
 		}
 
-		StringBundler sb = new StringBundler(8);
+		String target = "//input[@type='submit' and @value='" + targetName +
+			"']";
 
-		sb.append("//button[normalize-space(text())='");
-		sb.append(targetName);
-		sb.append("']|//input[@type='button' and normalize-space(@value)='");
-		sb.append(targetName);
-		sb.append("']");
-
-		WebElement webElement = _projectSelenium.findElement(sb.toString());
+		WebElement webElement = _projectSelenium.findElement(target);
 
 		webElement.click();
 	}

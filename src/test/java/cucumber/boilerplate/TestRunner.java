@@ -14,7 +14,6 @@
 
 package cucumber.boilerplate;
 
-import com.liferay.portal.kernel.util.StringPool;
 import com.liferay.poshi.runner.util.PropsUtil;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -59,7 +58,7 @@ public class TestRunner {
 		PropsUtil.set(
 			"selenium.chrome.driver.executable",
 			System.getProperty("webdriver.chrome.driver"));
-		PropsUtil.set("selenium.executable.dir.name", StringPool.BLANK);
+		PropsUtil.set("selenium.executable.dir.name", "");
 
 		//Time to explicitly wait while finding elements
 		PropsUtil.set("timeout.explicit.wait", "60");
